@@ -2,15 +2,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { AgGridModule } from 'ag-grid-angular';
+import { GridService } from './service/grid.service';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AgGridModule.withComponents([])
   ],
-  providers: [],
+  providers: [GridService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

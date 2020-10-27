@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/ag-grid-community/dist/styles/ag-grid.css";
+@import "../node_modules/ag-grid-community/dist/styles/ag-theme-alpine.css";
+
+.macro {
+  background-color: white !important;
+}
+
+.equities {
+  background-color: dodgerblue !important;
+}
+
+.credit {
+  background-color: green !important;
+}
